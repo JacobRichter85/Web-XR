@@ -1,18 +1,13 @@
 body {
     margin: 0;
-    overflow: hidden;
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    overflow: hidden;
 }
 
 h1 {
     position: absolute;
     top: 10px;
+    left: 20px;
     color: #333;
 }
 
@@ -20,4 +15,29 @@ h1 {
     width: 100vw;
     height: 100vh;
     display: block;
+}
+
+.timeline {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: lightgray;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: orange;
+}
+
+.dot:hover {
+    background-color: darkgray;
 }
