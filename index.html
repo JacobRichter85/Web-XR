@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Three.js Timeline</title>
+    <title>Interactive Schwimminsel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Interactive Three.js Timeline</h1>
     <div id="container"></div>
-
-    <div class="timeline">
-        <span id="earlier" class="dot" onclick="updateScene('earlier')">Früher</span>
-        <span id="today" class="dot active" onclick="updateScene('today')">Heute</span>
-        <span id="future" class="dot" onclick="updateScene('future')">Zukunft</span>
+    <div id="info-box" class="hidden">
+        <p id="info-text"></p>
+        <button id="close-btn">Close</button>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
