@@ -1,43 +1,32 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     overflow: hidden;
-}
-
-h1 {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    color: #333;
+    font-family: Arial, sans-serif;
 }
 
 #container {
     width: 100vw;
     height: 100vh;
-    display: block;
 }
 
-.timeline {
+#info-box {
     position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
+    top: 20px;
+    left: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.dot {
-    padding: 10px 20px;
-    margin: 0 10px;
-    background-color: lightgray;
-    border-radius: 20px;
+.hidden {
+    display: none;
+}
+
+#close-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
     cursor: pointer;
-}
-
-.dot.active {
-    background-color: orange;
-}
-
-.dot:hover {
-    background-color: darkgray;
 }
